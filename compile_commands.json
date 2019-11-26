@@ -1,0 +1,6 @@
+[{
+  "directory": "/home/zentauro/Documents/Academico/UAH/2019_2020/SED/Practica/lpc1768-makefile-gcc",
+  "command": "/usr/bin/arm-none-eabi-gcc  -I. -I./LPC1768  -g   -Wall -Wfloat-conversion -pipe -c /home/zentauro/Documents/Academico/UAH/2019_2020/SED/Practica/lpc1768-makefile-gcc/main.c",
+
+  "file": "/home/zentauro/Documents/Academico/UAH/2019_2020/SED/Practica/lpc1768-makefile-gcc"
+}]
