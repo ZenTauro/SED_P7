@@ -61,7 +61,8 @@ void EINT2_IRQHandler(void) {
   if (val == 0)
     LPC_TIM1->MR0 = 200;
   else {
-    LPC_TIM1->MR0 = 15 * 20 / val;
+    // We have to set it to the right values
+    LPC_TIM1->MR0 = 20 / val;
   }
 }
 
