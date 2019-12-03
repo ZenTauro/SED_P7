@@ -7,9 +7,9 @@ void TIMInit() {
   setmatch(LPC_TIM1, MR_0, MATCH_INT | MATCH_RST);
 
   LPC_SC->PCLKSEL0 |=
-      1 << 5;         // This sets the clock source to be the internal timer / 2
-  LPC_TIM1->PR = 50;  // We increase the timer by 1 every 1us
-  LPC_TIM1->MR0 = 20; // Set the match register to trigger every 20 us
+      1 << 4;         // This sets the clock source to be the internal timer / 2
+  LPC_TIM1->PR = 0;  // We increase the timer by 1 every 1us
+  LPC_TIM1->MR0 = 200; // Set the match register to trigger every 20 us
 
   LPC_TIM1->TCR |= 1 << 1;    // Reset the timer
   LPC_TIM1->TCR &= ~(1 << 1); // Clear the reset
